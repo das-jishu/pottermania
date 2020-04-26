@@ -1,0 +1,284 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: black;
+    margin: 5px 10px 0px 10px;
+}
+
+.container {
+    background: transparent;
+    text-align: center;
+    /* border: 1px solid white; */
+}
+
+.container-fluid {
+   margin-top: -30px;
+   height: 60px;
+}
+
+.maincontainer {
+    height: 0px;
+    
+    /* border: 1px solid white; */
+    background: url('Images/Dark-forest.jpg') center center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+
+    -webkit-transition: all 1s;  
+    -moz-transition: all 1s;  
+    -o-transition: all 1s;  
+    -ms-transition: all 1s;  
+    transition: all 1s;
+}
+
+.growmaincontainer {
+    height: 500px;
+}
+
+.startpage {
+    margin: 15px;
+    height: 100%;
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gamepage {
+    position: relative;
+    /* display: block; */
+    /* border: 1px solid white; */
+    height: 100%;
+}
+
+#score {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 40px;
+    line-height: 15px;
+    font-weight: bold;
+}
+
+#correct {
+    margin: 0 auto;
+    width: 120px;
+    top: 20px;
+    height: 40px;
+    line-height: 15px;
+    font-weight: bold;
+    display: none;
+}
+
+#wrong {
+    margin: 0 auto;
+    width: 120px;
+    top: 20px;
+    height: 40px;
+    line-height: 15px;
+    font-weight: bold;
+    display: none;
+}
+
+#restartgame {
+    position: absolute;
+    width: 100px;
+    bottom: 0px;
+    left: 20px;
+    height: 40px;
+    line-height: 15px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;  
+    -moz-transition: all 0.5s;  
+    -o-transition: all 0.5s;  
+    -ms-transition: all 0.5s;  
+}
+
+#restartgame:hover {
+    background-color: #dbb300;
+    color: black;
+}
+
+#timeremaining {
+    position: absolute;
+    width: 200px;
+    bottom: 0px;
+    right: 20px;
+    height: 40px;
+    line-height: 15px;
+    font-weight: bold;
+    
+}
+
+#selfimage {
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+
+.footerbtn {
+    outline: none;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+.footerbtn:hover {
+    cursor: auto;
+}
+
+.footerbtn:focus {
+    outline: 0;
+}
+
+.footimage {
+    width: 35px;
+    height: 35px;
+    margin: 0px 5px 2px 5px;
+}
+
+.footimage:hover {
+    cursor: pointer;
+}
+
+#facebook {
+    width: 48px;
+    height: 48px;
+}
+
+#twitter {
+    width: 32px;
+    height: 32px;
+}
+
+#head {
+    text-align: center;
+}
+
+.jumbotron {
+    background: transparent;
+    margin: 0 auto;
+    color: whitesmoke;
+    text-align: center;
+    width: 500px;
+}
+
+.jumbotron h1{
+    font-size: 50px;
+}
+
+.jumbotron span{
+    font-size: 20px;
+}
+
+.icongroup {
+    height: 60px;
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image {
+    flex: 1;
+    width: 23%;
+}
+
+.image img{
+    height: 45px;
+    width: 50px;
+}
+
+#parastart {
+    margin-top: 30px;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.btngroup {
+    width: 350px;
+    
+    margin: 20px auto 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons {
+    flex: 1;
+}
+
+.buttons .btn-primary {
+    width: 140px;
+}
+
+@media (max-width:768px) {
+    .jumbotron h1{
+        font-size: 35px;
+    }
+    
+    .jumbotron span{
+        font-size: 15px;
+    }
+
+    .jumbotron {
+        width: auto;
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    .icongroup {
+        width: 250px;
+    }
+
+    .image img{
+        height: 35px;
+        width: 40px;
+    }
+
+    #parastart {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .about {
+        height: 30px;
+        font-size: 14px;
+        line-height: 0px;
+    }
+
+    #selfimage {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;    
+    }
+
+    .foottext {
+        font-size: 14px;     
+    }
+
+    .footimage {
+        width: 28px;
+        height: 28px;
+        margin-top: 0px;
+    }
+    
+    #facebook {
+        width: 41px;
+        height: 41px;
+    }
+    
+    #twitter {
+        width: 25px;
+        height: 25px;
+    }
+
+}
