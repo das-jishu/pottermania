@@ -31,7 +31,7 @@
 
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="./index.php"><img src="Images/logo-potter-cropped.png" class="logo"></a>
+            <a class="navbar-brand" href="#"><img src="Images/logo-potter-cropped.png" class="logo"></a>
             <ul class="nav navbar-nav ml-auto">
               <li class="nav-item navbar-right">
                 <button onclick="window.location.href = './about.html';" style='color: white; letter-spacing: 1px;' class="btn btn-danger about"><b>ABOUT</b></button>
@@ -51,8 +51,10 @@
                     <div class='image'><img src='Images/icon-snitch.png'></div>
                 </div>
 
-                <p id='parastart' class='alert alert-success'>Welcome to the pottermania circle where you can test your knowledge by taking a quiz based on varying difficulty. Keep trying for a better score and share your results with your friends so that they can hop in too! Check the about section to know more.</p>
+                <p id='parastart' class='alert alert-success'>Welcome to the Pottermania circle where you can test your knowledge by taking a quiz based on varying difficulty. Keep trying for a better score and share your results with your friends so that they can hop in too! Check the about section to know more.</p>
             </div>
+
+            <div id='error'></div>
 
             <div class='maincontainer'>
                 <div class='startpage'>
@@ -65,10 +67,10 @@
                         SCORE: <span id="scoreval">0</span>
                     </div>
                     <div class='alert alert-success' id="correct">
-                        CORRECT!
+                        WELL DONE!
                     </div>
                     <div class='alert alert-danger' id="wrong">
-                        WRONG!
+                        OH NO!
                     </div>
                     <div id="questionbox">
                         
@@ -91,22 +93,34 @@
                         RESET
                     </div>
                     <div class='alert alert-primary' id="timeremaining">
-                        Time remaining: <span id="timevalue">60</span>
+                        Remaining: <span id="timevalue">60</span>
                     </div>
-                    <div id="gameover">
-                        
+                    
+                </div>
+
+                <div id="gameover">
+                    <div><h1 style='margin-bottom: 40px; color: white;'>TIME'S UP!</h1></div>
+                    <div><h3 style='margin-bottom: 20px; color: white;'>You scored <span id='showscore'></span></h3></div>
+                    <button id='playagain' class='btn btn-warning'>PLAY AGAIN</button>
+                    <div style='margin-top: 40px;' class='icongroup'>
+                        <div class='imageshare' id='twi'><a href="#" class="twitter-bar"><i class="fa fa-twitter"></i></a></div>
+                        <div class='imageshare' id='wha'><a href="#" class="whatsapp-bar"><i class="fa fa-whatsapp"></i></a></div>
+                        <div class='imageshare' id='ail'><a href="#" class="mail-bar"><i class="fa fa-envelope-o"></i></a></div>
+                        <div class='imageshare' id='sms'><a href="#" class="sms-bar"><i class="fa fa-commenting-o"></i></a></div>
                     </div>
                 </div>
             </div>
 
             <div class='btngroup'>
                 <div class='buttons'><button class='btn btn-primary' id='takequiz'>TAKE QUIZ</button></div>
-                <div class='buttons'><button class='btn btn-primary'>SHARE</button></div>
+                <!-- <div class='buttons'><button class='btn btn-primary'>SHARE</button></div> -->
             </div>
         </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
   
         <!-- Footer -->
-        <div style="margin-top: 200px; height: auto; text-align: center;" class="container-fluid">
+        <div style="margin-top: 150px; height: auto; text-align: center;" class="container-fluid">
             <div style='color: white;' id="footerself">
                 &copy; Copyright. All rights reserved.
             </div>
@@ -124,6 +138,32 @@
         </div>
 
         <!-- Scripts -->
+        <script>
+            var mybutton = document.getElementById("myBtn");
+            //console.log('Active');
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {
+                scrollFunction();
+                
+            };
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                mybutton.style.display = "block";
+                
+            } else {
+                mybutton.style.display = "none";
+                
+            }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            }
+        </script>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
