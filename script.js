@@ -18,10 +18,10 @@ $('#takequiz').click(function() {
     if(text === "TAKE QUIZ")
     {
         
-        console.log(status);
+        //console.log(status);
         if(status === true)
         {
-            console.log(status);
+            //console.log(status);
             $('.maincontainer').addClass('growmaincontainer');
             $('#takequiz').html('RELOAD PAGE');
         } 
@@ -41,7 +41,7 @@ function getData() {
     .then((resp) => resp.json()) // Transform the data into json
     .then(function(data) {
         characters = data;
-        console.log(characters);
+        //console.log(characters);
         status = true;
     }).catch(function(err) {
         $('#error').html("<div class='alert alert-danger'>Error connecting using the Potter API. Check your internet connectivity or try again after sometime.</div>");
@@ -54,7 +54,7 @@ function getData() {
     .then((resp) => resp.json()) // Transform the data into json
     .then(function(data) {
         spells = data;
-        console.log(spells);
+        //console.log(spells);
         status = true;
     }).catch(function(err) {
         $('#error').html("<div class='alert alert-danger'>Error connecting using the Potter API. Check your internet connectivity or try again after sometime.</div>");
@@ -67,7 +67,7 @@ function getData() {
     .then((resp) => resp.json()) // Transform the data into json
     .then(function(data) {
         houses = data;
-        console.log(data);
+        //console.log(data);
         status = true;
     }).catch(function(err) {
         $('#error').html("<div class='alert alert-danger'>Error connecting using the Potter API. Check your internet connectivity or try again after sometime.</div>");
