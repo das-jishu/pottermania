@@ -268,7 +268,7 @@ body {
     width: 50px;
 }
 
-#parastart {
+.parastart {
     margin-top: 30px;
     font-style: italic;
     font-size: 18px;
@@ -290,6 +290,67 @@ body {
     width: 140px;
 }
 
+.imageshare {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    padding-top: 6px;
+    box-shadow: black;
+    cursor: pointer;
+
+    -webkit-box-shadow: 10px 10px 22px -1px rgba(243, 239, 239, 0.26);
+    -moz-box-shadow: 10px 10px 22px -1px rgba(255, 255, 255, 0.267);
+    box-shadow: 10px 10px 22px -1px rgba(241, 237, 237, 0.315);
+}
+
+#twi {
+    background: #55ACEE;
+}
+
+#wha {
+    background:#23bd00e8 ;
+}
+
+#ail {
+    background: #007bb5;
+}
+
+#sms {
+    background: #deb887;
+}
+
+.facebook-bar {
+    background: #3B5998;
+    color: white;
+}
+
+.twitter-bar {
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+.whatsapp-bar {
+    font-size: 30px;
+    color: white;
+}
+
+.mail-bar {
+    font-size: 28px;
+    color: white;
+}
+
+.sms-bar {
+    font-size: 28px;
+    color: white;
+}
+
+#quotes {
+    width: 500px;
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+
 @media (max-width:768px) {
     .jumbotron h1{
         font-size: 35px;
@@ -299,7 +360,7 @@ body {
         font-size: 15px;
     }
 
-    .jumbotron {
+    .jumbotron, #quotes {
         width: auto;
     }
 
@@ -316,7 +377,7 @@ body {
         width: 40px;
     }
 
-    #parastart {
+    .parastart {
         margin-top: 20px;
         font-size: 16px;
     }
@@ -410,6 +471,17 @@ body {
         height: 25px;
     }
 
+    .imageshare {
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        padding-top: 6px;
+    }
+
+    .twitter-bar, .whatsapp-bar, .mail-bar, .sms-bar {
+        font-size: 20px;
+    }
+
 }
 
 #myBtn {
@@ -432,59 +504,4 @@ body {
   
 #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
-}
-
-.imageshare {
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
-    padding-top: 6px;
-    box-shadow: black;
-    cursor: pointer;
-
-    -webkit-box-shadow: 10px 10px 22px -1px rgba(243, 239, 239, 0.26);
--moz-box-shadow: 10px 10px 22px -1px rgba(255, 255, 255, 0.267);
-box-shadow: 10px 10px 22px -1px rgba(241, 237, 237, 0.315);
-}
-
-#twi {
-    background: #55ACEE;
-}
-
-#wha {
-    background:#23bd00e8 ;
-}
-
-#ail {
-    background: #007bb5;
-}
-
-#sms {
-    background: #deb887;
-}
-
-.facebook-bar {
-    background: #3B5998;
-    color: white;
-}
-
-.twitter-bar {
-    color: white;
-    font-size: 20px;
-    border-radius: 50%;
-}
-
-.whatsapp-bar {
-    font-size: 20px;
-    color: white;
-}
-
-.mail-bar {
-    font-size: 20px;
-    color: white;
-}
-
-.sms-bar {
-    font-size: 20px;
-    color: white;
 }
