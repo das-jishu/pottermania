@@ -1,4 +1,4 @@
-let api_key = YOUR_API_KEY;
+let api_key = "$2a$10$BeJYGzlDN3Gj3tRbLA.68OyGqYifAJR7jX.udTRxvceaulwAwAYwS";
 let characters, houses, spells;
 getData();
 let status;
