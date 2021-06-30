@@ -126,3 +126,131 @@
         <script src='./script.js'></script>
     </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Title of the page -->
+        <title>Pottermania QUIZ - About</title>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!-- Linking external stylesheets -->
+        <link rel="stylesheet" href="style.css">
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+
+        <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+
+        <!-- Linking google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+
+        <!-- Linking icons -->
+        <link rel="icon" href="Images/icon-potter.png">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    </head>
+
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#"><img src="Images/logo-potter-cropped.png" class="logo"></a>
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item navbar-right">
+                <button onclick="window.location.href = './index.html';" style='color: white; letter-spacing: 1px;' class="btn btn-danger about"><b>HOME</b></button>
+              </li>  
+            </ul>          
+        </nav>
+
+        <div class='container'>
+            <div class='jumbotron'>
+                <span>Welcome to</span>
+                <h1 id='head'>POTTERMANIA!</h1>
+                <hr style='border-top: 1px solid white;'>
+                <div class='icongroup'>
+                    <div class='image'><img src='Images/icon-harry.png'></div>
+                    <div class='image'><img src='Images/icon-hallows.png'></div>
+                    <div class='image'><img src='Images/icon-sorthat.png'></div>
+                    <div class='image'><img src='Images/icon-snitch.png'></div>
+                </div>
+
+                <p style='margin-top: 20px; font-weight: bold; font-style: normal;' class='parastart alert alert-success'>ABOUT THIS WEBSITE</p>
+
+                <p class='parastart' style='border: 1px solid grey; border-radius: 5px; padding: 15px; line-height: 1.8;text-align: left; font-style: normal; overflow: hidden;'>
+                    This is a pet project of mine. It is basically a website which allows you to take a quiz based on the magical world of Harry Potter. What makes it different from other quizzing sites and pages is that I HAVE NOT used a predefined question bank and selected random questions to be displayed. Not a single question has been prewritten and stored. Rather, it generates questions every time the page is loaded. The generation of the questions is based on a simple algorithm which uses an API to fetch data from a database (related to Harry Potter) and some random numbers. Since the amount of information is vast, the chances of getting a question repeated for an user is less than the probability of Albus Dumbledore losing a duel.<br><br>
+
+                    If you face issues regarding the page not loading or the quiz not working as it should, please <button onclick='window.open("./index.html", "_self")' class='btn btn-secondary' style='padding: 1px;'>REFRESH</button> a couple of times and CHECK your internet connection before proceeding.<br><br>
+
+                    <span style='border-bottom: 1px solid white;'>ATTRIBUTIONS</span>:<br>
+                    Harry Potter API: To get access to all data and generate questions from it.<br>
+                    Link: <u><a style='color: white;' href='https://www.potterapi.com/' target='_blank'>https://www.potterapi.com/</a></u><br><br>
+
+                    Quotes API: To generate a random quote on every page reload and display on the bottom of the main page.<br>
+                    Link: <u><a style='color: white;' href='https://pprathameshmore.github.io/QuoteGarden/' target='_blank'>https://pprathameshmore.github.io/QuoteGarden/</a></u><br><br>
+
+                    If you have any issues to report or just a normal issue to criticize about, please leave a message.<br><br>
+
+                    <button onclick='window.open("mailto:das.jishu25@gmail.com", "_blank")' class='btn btn-primary'>CONTACT ME</button>
+                </p>
+            </div>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+  
+        <!-- Footer -->
+        <div style="margin-top: 150px; height: auto; text-align: center;" class="container-fluid">
+            <div style='color: white;' id="footerself">
+                &copy; Copyright. All rights reserved.
+            </div>
+            <div style='margin-top: 5px;' class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="footerbtn"><img id='selfimage' src='Images/self-image-circle.png'></img></button></button>
+                <button type="button" style="margin-top: 2px;" class="footerbtn" ><span class='foottext' style='color: white;'>Developed by<br></span><span class='foottext' style='color: white;'>Subham Das</span></button>
+            </div>
+            <br>
+            <div style='margin-top: 15px; margin-bottom: 15px;'class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="footerbtn" onclick="window.open('https://github.com/das-jishu')"><img class='footimage' id='github' title='Github' src='Images/GitHub-Mark-Light-120px-plus.png'></img></button>
+              <button type="button" class="footerbtn" onclick="window.open('https://www.facebook.com/subham.das.39948')"><img class='footimage' id='facebook' title='Facebook' src='Images/facebook_logos_PNG19754.png'></img></button>
+              <button type="button" class="footerbtn" onclick="window.open('https://www.linkedin.com/in/subham-das-51b5bb171/')"><img class='footimage' id='linkedin' title='Linkedin' src='Images/linkedIn_PNG37.png'></img></button>
+              <button type="button" class="footerbtn" onclick="window.open('https://twitter.com/lord_danton')"><img class='footimage' id='twitter' title='Twitter' src='Images/twitter_PNG34.png'></img></button>
+          </div>
+        </div>
+
+        <!-- Scripts -->
+        <script>
+            var mybutton = document.getElementById("myBtn");
+            //console.log('Active');
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {
+                scrollFunction();
+                
+            };
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                mybutton.style.display = "block";
+                
+            } else {
+                mybutton.style.display = "none";
+                
+            }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src='./script.js'></script>
+    </body>
+</html>

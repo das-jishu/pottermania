@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     font-family: 'Roboto Slab', serif;
     background-color: black;
@@ -504,4 +505,512 @@ body {
   
 #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
+=======
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: black;
+    margin: 5px 10px 0px 10px;
+}
+
+.container {
+    background: transparent;
+    text-align: center;
+    /* border: 1px solid white; */
+}
+
+.container-fluid {
+   margin-top: -30px;
+   height: 60px;
+}
+
+.maincontainer {
+    height: 0px;
+    
+    /* border: 1px solid white; */
+    background: url('Images/Dark-forest.jpg') center center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+
+    -webkit-transition: all 1s;  
+    -moz-transition: all 1s;  
+    -o-transition: all 1s;  
+    -ms-transition: all 1s;  
+    transition: all 1s;
+}
+
+.growmaincontainer {
+    height: 550px;
+}
+
+.startpage {
+    margin: 15px;
+    height: 100%;
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gamepage {
+    position: relative;
+    display: none;
+    /* border: 1px solid white; */
+    height: 100%;
+}
+
+#score {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 40px;
+    line-height: 15px;
+    font-weight: bold;
+}
+
+#correct {
+    margin: 0 auto;
+    width: 140px;
+    top: 20px;
+    height: 40px;
+    line-height: 15px;
+    font-weight: bold;
+    background-color: #089900;
+    color: white;
+    border: unset;
+    display: none;
+}
+
+#wrong {
+    margin: 0 auto;
+    width: 120px;
+    top: 20px;
+    height: 40px;
+    line-height: 15px;
+    font-weight: bold;
+    background-color: #a81c00;
+    border: unset;
+    color: white;
+    display: none;
+}
+
+#questionbox {
+    /* border: 1px solid grey; */
+    position: absolute;
+    height: 120px;
+    width: 80%;
+    top: 80px;
+    left: 20px;
+    color: white;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+#choices {
+    height: 200px;
+    width: 80%;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    color: white;
+    margin-top: 10px;
+}
+
+.box {
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: transparent;
+
+    -webkit-transition: all 0.6s;  
+    -moz-transition: all 0.6s;  
+    -o-transition: all 0.6s;  
+    -ms-transition: all 0.6s;  
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+#restartgame {
+    position: absolute;
+    width: 100px;
+    bottom: 0px;
+    left: 20px;
+    height: 40px;
+    line-height: 15px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;  
+    -moz-transition: all 0.5s;  
+    -o-transition: all 0.5s;  
+    -ms-transition: all 0.5s;  
+}
+
+#restartgame:hover {
+    background-color: #dbb300;
+    color: black;
+}
+
+#timeremaining {
+    position: absolute;
+    width: 200px;
+    bottom: 0px;
+    right: 20px;
+    height: 40px;
+    line-height: 15px;
+    font-weight: bold;
+    
+}
+
+#gameover {
+    /* border: 1px solid white; */
+    height: 100%;
+    width: 100%;
+    display: none;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+#takequiz {
+    margin-top: 50px;
+}
+
+#selfimage {
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+
+.footerbtn {
+    outline: none;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+.footerbtn:hover {
+    cursor: auto;
+}
+
+.footerbtn:focus {
+    outline: 0;
+}
+
+.footimage {
+    width: 35px;
+    height: 35px;
+    margin: 0px 5px 2px 5px;
+}
+
+.footimage:hover {
+    cursor: pointer;
+}
+
+#facebook {
+    width: 48px;
+    height: 48px;
+}
+
+#twitter {
+    width: 32px;
+    height: 32px;
+}
+
+#head {
+    text-align: center;
+}
+
+.jumbotron {
+    background: transparent;
+    margin: 0 auto;
+    color: whitesmoke;
+    text-align: center;
+    width: 500px;
+}
+
+.jumbotron h1{
+    font-size: 50px;
+}
+
+.jumbotron span{
+    font-size: 20px;
+}
+
+.icongroup {
+    height: 60px;
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image {
+    flex: 1;
+    width: 23%;
+}
+
+.image img{
+    height: 45px;
+    width: 50px;
+}
+
+.parastart {
+    margin-top: 30px;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.btngroup {
+    width: 350px;
+    
+    margin: 20px auto 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons {
+    flex: 1;
+}
+
+.buttons .btn-primary {
+    width: 140px;
+}
+
+.imageshare {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    padding-top: 6px;
+    box-shadow: black;
+    cursor: pointer;
+
+    -webkit-box-shadow: 10px 10px 22px -1px rgba(243, 239, 239, 0.26);
+    -moz-box-shadow: 10px 10px 22px -1px rgba(255, 255, 255, 0.267);
+    box-shadow: 10px 10px 22px -1px rgba(241, 237, 237, 0.315);
+}
+
+#twi {
+    background: #55ACEE;
+}
+
+#wha {
+    background:#23bd00e8 ;
+}
+
+#ail {
+    background: #007bb5;
+}
+
+#sms {
+    background: #deb887;
+}
+
+.facebook-bar {
+    background: #3B5998;
+    color: white;
+}
+
+.twitter-bar {
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+.whatsapp-bar {
+    font-size: 30px;
+    color: white;
+}
+
+.mail-bar {
+    font-size: 28px;
+    color: white;
+}
+
+.sms-bar {
+    font-size: 28px;
+    color: white;
+}
+
+#quotes {
+    width: 500px;
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:768px) {
+    .jumbotron h1{
+        font-size: 35px;
+    }
+    
+    .jumbotron span{
+        font-size: 15px;
+    }
+
+    .jumbotron, #quotes {
+        width: auto;
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    .icongroup {
+        width: 250px;
+    }
+
+    .image img{
+        height: 35px;
+        width: 40px;
+    }
+
+    .parastart {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .about {
+        height: 30px;
+        font-size: 14px;
+        line-height: 0px;
+    }
+
+    #score {
+        height: 30px;
+        font-size: 14px;
+        width: 100px;
+        padding: 5px 5px 5px 5px;
+        line-height: 18px;
+    }
+
+    #correct {
+        height: 30px;
+        font-size: 14px;
+        width: 100px;
+        padding: 5px 5px 5px 5px;
+        line-height: 18px;
+    }
+
+    #wrong {
+        height: 30px;
+        font-size: 14px;
+        width: 100px;
+        padding: 5px 5px 5px 5px;
+        line-height: 18px;
+    }
+
+    .growmaincontainer {
+        height: 650px;
+    }
+
+    #questionbox, .box {
+        font-size: 16px;
+    }
+
+    #choices {
+        width: 90%;
+        height: 280px;
+    }
+
+    .box {
+        height: 70px;
+    }
+
+    #restartgame {
+        height: 30px;
+        font-size: 14px;
+        width: 80px;
+        padding: 5px 5px 5px 5px;
+        line-height: 18px;
+    }
+
+    #timeremaining {
+        height: 30px;
+        font-size: 14px;
+        width: 150px;
+        padding: 5px 5px 5px 5px;
+        line-height: 18px;
+    }
+
+    #selfimage {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;    
+    }
+
+    .foottext, #footerself {
+        font-size: 14px;     
+    }
+
+    .footimage {
+        width: 28px;
+        height: 28px;
+        margin-top: 0px;
+    }
+    
+    #facebook {
+        width: 41px;
+        height: 41px;
+    }
+    
+    #twitter {
+        width: 25px;
+        height: 25px;
+    }
+
+    .imageshare {
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        padding-top: 6px;
+    }
+
+    .twitter-bar, .whatsapp-bar, .mail-bar, .sms-bar {
+        font-size: 20px;
+    }
+
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 30px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 1px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px;
+    height: 40px;
+    width: 40px; /* Increase font size */
+  }
+  
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+>>>>>>> 22c26c292dc73228f6975bb86c58a32b095977ed
 }
