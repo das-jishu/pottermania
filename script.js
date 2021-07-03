@@ -36,8 +36,8 @@ $('#takequiz').click(function() {
 
 //get all data from API and store it in different arrays based on type
 function getData() {
-    let url_search = "https://www.potterapi.com/v1/characters?key="+api_key;
-    //let url_search = "https://cors-anywhere.herokuapp.com/https://www.potterapi.com/v1/characters?key="+api_key;
+    //let url_search = "https://www.potterapi.com/v1/characters?key="+api_key;
+    let url_search = "https://attach-cors.herokuapp.com/https://www.potterapi.com/v1/characters?key=" + api_key;
     fetch(url_search)
     .then((resp) => resp.json()) // Transform the data into json
     .then(function(data) {
@@ -50,8 +50,8 @@ function getData() {
         status = false;
     });
     
-    url_search = "https://www.potterapi.com/v1/spells?key="+api_key;
-    //url_search = "https://cors-anywhere.herokuapp.com/https://www.potterapi.com/v1/spells?key="+api_key;
+    //url_search = "https://www.potterapi.com/v1/spells?key="+api_key;
+    url_search = "https://attach-cors.herokuapp.com/https://www.potterapi.com/v1/spells?key="+api_key;
     fetch(url_search)
     .then((resp) => resp.json()) // Transform the data into json
     .then(function(data) {
@@ -64,8 +64,8 @@ function getData() {
         status = false;
     });
 
-    url_search = "https://www.potterapi.com/v1/houses?key="+api_key;
-    //url_search = "https://cors-anywhere.herokuapp.com/https://www.potterapi.com/v1/houses?key="+api_key;
+    //url_search = "https://www.potterapi.com/v1/houses?key="+api_key;
+    url_search = "https://attach-cors.herokuapp.com/https://www.potterapi.com/v1/houses?key="+api_key;
     fetch(url_search)
     .then((resp) => resp.json()) // Transform the data into json
     .then(function(data) {
